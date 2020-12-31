@@ -72,6 +72,10 @@ async function main() {
 		await stopEnvironment();
 	} catch (e) {
         console.log(`test run failed: ${e}`);
+
+        // force to stop containers if tests have failed
+        await stopEnvironment();
+        
 		process.exit(1);
 	}
 }
