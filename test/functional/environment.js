@@ -31,9 +31,7 @@ async function startContainers() {
 }
 
 async function killContainers() {
-    console.log("MATANDO...");
     await runCommand(`docker-compose -f ${dockerComposeConfig} kill`);
-    console.log("MATADO...");
 }
 
 async function waitForContainers() {
@@ -75,7 +73,7 @@ async function main() {
 
         // force to stop containers if tests have failed
         await stopEnvironment();
-        
+
 		process.exit(1);
 	}
 }
