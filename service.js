@@ -12,5 +12,6 @@ app.get('/api/answer', async(req, res) => {
 // simulate startup time
 
 setTimeout(() => {
+    console.log("Service listening on port 8080...");
     app.listen(8080);
 });

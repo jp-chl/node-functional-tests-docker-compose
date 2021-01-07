@@ -7,6 +7,6 @@ describe('functional tests', () => {
     it('GET /answer', async () => {
         const response = await request(`${ctx.serviceBaseUrl}/api/answer`);
 
-        expect(response).to.be.equal('{"answer:42}');
+        expect(response).to.be.equal('{"answer":42}');
     });
 });

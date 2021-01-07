@@ -1,0 +1,6 @@
+version: '3'
+services:
+  test-service:
+    ports:
+      - '8080'
+    restart: always

@@ -1,0 +1,8 @@
+
+version: '3'
+services:
+  test-service:
+    build: ../..
+    volumes:
+      - '../..:/app'
+    command: ./node_modules/nyc/bin/nyc.js --report-dir testdata/coverage --reporter lcov node service.js
