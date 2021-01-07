@@ -8,7 +8,7 @@ This tests run two simple endpoints which are tested by a docker image using doc
 
 ## Running tests
 
-To run tests located at file [environment.js](./test/functional/tests/environment.js), run:
+To run tests located at file [environment.js](./test/functional/environment.js), run:
 
 ```bash
 node test/functional/environment.js
