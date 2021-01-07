@@ -6,4 +6,6 @@ This tests run two simple endpoints which are tested by a docker image using doc
 
 ---
 
-<script id="asciicast-Qxv17KOfHZkfLQsuxc5A8RYxZ" src="https://asciinema.org/a/Qxv17KOfHZkfLQsuxc5A8RYxZ.js" async></script>
+<a href="https://asciinema.org/a/Qxv17KOfHZkfLQsuxc5A8RYxZ" target="_blank"><img src="https://asciinema.org/a/Qxv17KOfHZkfLQsuxc5A8RYxZ.svg" /></a>
+
+<a href="https://asciinema.org/a/kXrbLL04OCiKUGCvHOYJVOdXn" target="_blank"><img src="https://asciinema.org/a/kXrbLL04OCiKUGCvHOYJVOdXn.svg" /></a>
