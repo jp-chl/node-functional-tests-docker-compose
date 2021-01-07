@@ -95,10 +95,3 @@ Acess to coverage report:
 ```bash
 open testdata/coverage/lcov-report/index.html
 ```
-
-### Service discovery
-
-Using Consult + Registrator.
-
-
-

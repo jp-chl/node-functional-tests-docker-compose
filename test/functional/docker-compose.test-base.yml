@@ -1,6 +1,24 @@
 version: '3'
 services:
   test-service:
+    environment:
+      SERVICE_NAME: 'mytest-test-service'
+      SERVICE_CHECK_HTTP: '/health'
+      SERVICE_CHECK_INTERVAL: '1s'
+      CUSTOM_RABBITMQ_SERVICE_NAME: 'mytest-rabbit-mq'
     ports:
       - '8080'
+    depends_on:
+      - rabbitmq
+    restart: always
+  rabbitmq:
+    image: rabbitmq:3-management
+    environment:
+       SERVICE_5672_NAME: 'mytest-rabbit-mq'
+       SERVICE_15672_NAME: 'mytest-rabbit-mq-ui'
+       SERVICE_5672_CHECK_TCP: 'true'
+       SERVICE_CHECK_INTERVAL: '1s'
+    ports:
+      - '5672'
+      - '15672'
     restart: always
